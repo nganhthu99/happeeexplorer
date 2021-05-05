@@ -48,7 +48,7 @@ const UnspentTxOuts = (props) => {
                                         <TableCell className={classes.tableCell2}><Link component="button" onClick={() => {history.push('/transaction/' + row.txOutTransactionId)}}>{row.txOutTransactionId}</Link></TableCell>
                                         <TableCell>{row.txOutIndex}</TableCell>
                                         <TableCell className={classes.tableCell2}><Link component="button" onClick={() => {history.push('/address/'+row.address)}}>{row.address}</Link></TableCell>
-                                        <TableCell align='right'>{row.amount}</TableCell>
+                                        <TableCell align='right'>{`${row.amount} HC`}</TableCell>
                                     </TableRow>
                                 ))}
                             </TableBody>
